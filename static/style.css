@@ -3,7 +3,7 @@ body{
     font-size: 1.125rem;
     color: #acacac;
     font-family: 'Playfair Display', serif;
-    background-color: #f8f8f8!important;
+    background-color: white!important;
 }
 
 img{
@@ -24,6 +24,12 @@ h2{
     margin-bottom: 0;
 }
 
+.navbar-brand{
+    color: white!important;
+    font-weight: 700;
+    font-size: 1.3rem!important;
+}
+
 span{
     color: rgb(255, 136, 0);
 }
@@ -38,7 +44,7 @@ span{
 .carousel-caption{
     position: absolute;
     left: 0;
-    top: 16%;
+    top: 32%;
     bottom: 0!important;
     margin-left: 0;
     text-align: left!important;
@@ -57,17 +63,19 @@ span{
 }
 
 .btn{
-    padding: .150rem .25rem!important;
+    padding: .50rem .25rem!important;
     font-weight: 200!important;
     font-size: .65rem!important;
+    text-transform: uppercase;
 }
 
 @media(min-width:450px){
     .carousel-caption{
-        top: 25%;
+        top: 20%;
     }
     .carousel-caption h1{
-        font-size: 1.4rem;
+        font-size: 2rem;
+        
     }
     .carousel-caption p{
         font-size: .57rem;
@@ -76,17 +84,21 @@ span{
 
 @media(min-width:700px){
     .carousel-caption{
-        top: 27%;
+        top: 35%;
     }
     .carousel-caption h1{
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     .carousel-caption p{
-        font-size: .75rem;
+        font-size: .95rem;
+    }
+    .w-100{
+        width: 100vh;
+        height: 50vh;
     }
 }
 
-@media(min-width:800px){
+@media(min-width:900px){
     .carousel-caption{
         top: 30%;
     }
@@ -106,6 +118,27 @@ span{
 
 /* *** LAYOUT *** */
 
+header{
+    text-align: center;
+}
+
+footer{
+    background-color: #f8f8f8;
+    position: absolute;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-light{
+    background: transparent!important;
+}
+
+.navbar-light.scrolled{
+    background-color: rgba(53, 0, 0, 0.616)!important;
+    transition: background-color 200ms linear;
+}
+
 .container{
     width: 90%;
     max-width: 900;
@@ -118,27 +151,13 @@ span{
     flex-direction: column;
 }
 
-header{
-    background: #f8f8f8;
-    padding: .5em 0;
-    text-align: center;
-}
-
-footer{
-    background-color: #f8f8f8;
-    position: absolute;
-    padding: 1em;
-    width: 100%;
-    text-align: center;
-}
-
 .footer-text{
     padding-top: 1em;
     margin: 0;
 }
 
 .carousel-image{
-    max-height: 600px!important;
+    height: auto;
 }
 
 .btn-outline-success{
@@ -160,9 +179,15 @@ footer{
 }
 
 
-@media (min-width:500px) {
+@media only screen and (min-width:500px) {
     .flex{
         flex-direction: row;
+    }
+    .w-100{
+        height: 100vh;
+    }
+    .navbar-light.scrolled{
+        max-width: 100%;
     }
 }
 
@@ -190,10 +215,26 @@ nav a:focus{
     color: #1792d2;
 }
 
-@media (max-width: 500px) {
+/* .navbar-nav.ml-auto{
+    background: rgba(0,0,0,0.5);
+} */
+
+.navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show > .nav-link {
+    color: white!important;
+}
+
+.navbar{
+    padding: 0 1em!important;
+}
+
+@media only screen and (max-width: 900px) {
     nav ul{
         flex-direction: column;
         margin-top: 0;
+        line-height: 0.3;
     }
     nav li{
         margin: .5em 0;
@@ -203,6 +244,22 @@ nav a:focus{
     }
     .flex{
         flex-direction: row;
+    }
+    .navbar-nav.ml-auto {
+        background: rgba(0,0,0,0.5);
+    }
+    .navbar-brand{
+        color: white!important;
+        font-weight: 700;
+        font-size: 1!important;
+    }
+    .w-100{
+        height: 50vh;
+    }
+    .navbar-toggler{
+        padding: 1px 5px!important;
+        font-size: 18px!important;
+        background: #fff!important;
     }
 }
 
@@ -223,10 +280,6 @@ nav a:focus{
 
 
 /* SECTION */
-
-.section1{
-    background: #f8f8f8;
-}
 
 .section1-text{
     background: white;
@@ -279,9 +332,6 @@ nav a:focus{
 }
 
 @media (min-width:500px){
-    .section1{
-        background: #f8f8f8;
-    }
     .section1-text{
         margin: 0;
     }
@@ -329,6 +379,7 @@ nav a:focus{
 
 .menu-image{
     width: 30%;
+    max-width: 100px;
     max-height: 70px;
     object-fit: cover;
     border-radius: 40%;
@@ -379,8 +430,9 @@ nav a:focus{
     justify-content: space-between;
     text-transform: uppercase;
     color: #a74628;
-    font-size: .55rem;
-    font-weight: 700;
+    font-size: .45rem;
+    font-weight: 600;
+    font-family: 'Noto Serif', serif;
 }
 
 .wrapper .menu-tab ul li{
@@ -424,7 +476,7 @@ nav a:focus{
         width: 25%;
     }
     .menu-text{
-        width: 55%;
+        width: 50%;
     }
     .menu-price{
         width: 10%;
@@ -440,20 +492,95 @@ nav a:focus{
     }
     .wrapper .menu-tab ul li{
         font-size: 1.5rem;
+        margin-left: .75em;
     }
     
 }
 
+/* RESERVE TABLE SECTION */
+.table{
+    background-image: url(../static/image/lukas-blazek-f-TWhXOrLiU-unsplash.jpg)!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3em;
+    height: 100vh;
+    box-shadow: 0px 2px 8px #a74628;
+}
 
-/* *** SCROLL *** */
-#container {
-    height: 50px;
-  }
-  
-  #container DIV {
-    background-color: pink;
-  }
-  
-  .hideme {
-    opacity: 0;
-  }
+.table h1{
+    padding-top: 1em;
+    padding-bottom: .30em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Kaushan Script', cursive;
+    color: #a74628;
+}
+
+.table1{
+    background: white;
+    border-radius: 10px;   
+}
+
+.table-form{
+    padding: 1.5em;
+}
+
+.table-form label{
+    margin-bottom: .45em;
+    margin-top: .45em;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.table-form .btn{
+    background: #a74628;
+    border-color: #a74628;
+    margin-top: 1.5em;
+    font-weight: 700!important;
+    font-size: .75rem!important;
+}
+
+.table-form .btn:hover,
+.table-form .btn:focus{
+    background: #ca6d51;
+    border-color: #ca6d51;
+}
+
+.form-group{
+    margin-bottom: 0!important;
+}
+
+.form-control{
+    height: 30px!important;
+}
+
+.form-control:hover,
+.form-control:focus{
+    border: 2px solid #ff7a5c;
+}
+
+@media only screen and (min-width:700px){
+    .table h1{
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
+    .table1{
+        background: white;
+        border-radius: 10px; 
+        margin-left: -1.3em;
+        margin-right: -1.3em;  
+    }
+    .g{
+        width: 60%;
+        padding-left: 1em;
+        display: table-cell;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .table h1{
+        color: green;
+    }
+}
