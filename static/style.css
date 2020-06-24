@@ -127,7 +127,7 @@ footer{
     background-repeat: no-repeat;
     padding: 1em;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     text-align: center;
 }
 
@@ -528,7 +528,7 @@ nav a:focus{
 }
 
 .table h1{
-    padding-top: .90em;
+    padding-top: .50em;
     padding-bottom: .30em;
     text-align: center;
     font-weight: 700;
@@ -543,8 +543,8 @@ nav a:focus{
 }
 
 .table-form{
-    padding: 1.5em;
-    max-height: 85vh;
+    padding: .50em;
+    max-height: 100vh;
 }
 
 .table-form label{
@@ -559,7 +559,7 @@ nav a:focus{
 .table-form .btn{
     background: #ff5600;
     border-color: #ff5600;
-    margin-top: 1.5em;
+    margin-top: 1em;
     font-weight: 700!important;
     font-size: .75rem!important;
 }
@@ -572,6 +572,7 @@ nav a:focus{
 
 .form-group{
     margin-bottom: 0!important;
+    margin-top: 0;
 }
 
 .form-control{
@@ -722,11 +723,7 @@ nav a:focus{
 }
 
 .blog-image{
-    margin-top: 0;
-}
-
-.single-blog{
-    margin-bottom: 4em;
+    height: 100vh;
 }
 
 @media only screen and (min-width:770px){
@@ -755,7 +752,8 @@ nav a:focus{
     flex-direction: column;
     text-align: left;
     color: white;
-    margin-top: 1.5em;
+    margin-top: 3em;
+    margin-bottom: 5em;
 }
 
 .footer h3{
@@ -816,8 +814,8 @@ nav a:focus{
 @media only screen and (min-width:770px){
     .footer{
         flex-direction: row;
-        margin-top: 7em;
-        margin-bottom: 7em;
+        margin-top: 10.5em;
+        margin-bottom: 11.5em;
     }
     .sub-1{
         width: 35%;
