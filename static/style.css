@@ -71,23 +71,22 @@ span{
 
 @media(min-width:450px){
     .carousel-caption{
-        top: 20%;
+        top: 25%;
     }
     .carousel-caption h1{
-        font-size: 2rem;
-        
+        font-size: 1.6rem;        
     }
     .carousel-caption p{
         font-size: .57rem;
     }
 }
 
-@media(min-width:700px){
+@media(min-width:770px){
     .carousel-caption{
-        top: 35%;
+        top: 20%;
     }
     .carousel-caption h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .carousel-caption p{
         font-size: .95rem;
@@ -123,10 +122,12 @@ header{
 }
 
 footer{
-    background-color: #f8f8f8;
-    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.925), rgba(0, 0, 0, 0.925)), url(../static/image/section_bg03.png)!important;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 1em;
     width: 100%;
+    height: 80vh;
     text-align: center;
 }
 
@@ -135,7 +136,7 @@ footer{
 }
 
 .navbar-light.scrolled{
-    background-color: rgba(53, 0, 0, 0.616)!important;
+    background-color: rgba(0, 0, 0, 0.616)!important;
     transition: background-color 200ms linear;
 }
 
@@ -154,6 +155,7 @@ footer{
 .footer-text{
     padding-top: 1em;
     margin: 0;
+    color: white;
 }
 
 .carousel-image{
@@ -165,13 +167,13 @@ footer{
     background-image: none!important;
     background-color: transparent!important;
     border-color: whitesmoke!important;
-    border-radius: 30%!important;
+    border-radius: 30px!important;
 }
 
 .btn-outline-success:hover,
 .btn-outline-success:focus{
-    color: #a74628;
-    border-color: #a74628;
+    background: #a74628!important;
+    border-color: #a74628!important;
 }
 
 .col-md-4{
@@ -331,9 +333,18 @@ nav a:focus{
     color: black;
 }
 
-@media (min-width:500px){
+@media only screen and (min-width:577px){
+    .section1-text{
+        color: blue;
+        left: 3em;
+    }
+}
+
+@media (min-width:770px){
     .section1-text{
         margin: 0;
+        color: purple;
+        left: 0;
     }
     .section1 h1{
         padding-top: 2em;
@@ -419,6 +430,7 @@ nav a:focus{
 .menu-text p{
     padding: 0;
     margin: 0;
+    color: #707070;
 }
 
 .wrapper .menu-tab ul{
@@ -455,7 +467,14 @@ nav a:focus{
     padding-right: .50em;
 }
 
-@media (min-width:500px){
+@media only screen and (min-width:500px){
+    .wrapper .menu-tab ul li{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+@media (min-width:770px){
     .menu h1{
         margin-top: 3em;
     }
@@ -486,7 +505,7 @@ nav a:focus{
         margin-top: 3em;
     }
     .wrapper .menu-tab ul{
-        margin-left: 25%;
+        margin-left: 23%;
         margin-right: 25%;
         margin-top: 5em;
     }
@@ -499,22 +518,22 @@ nav a:focus{
 
 /* RESERVE TABLE SECTION */
 .table{
-    background-image: url(../static/image/lukas-blazek-f-TWhXOrLiU-unsplash.jpg)!important;
+    background-image: url(../static/image/section_bg04.png)!important;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 3em;
     height: 100vh;
-    box-shadow: 0px 2px 8px #a74628;
+    box-shadow: 0px 2px 8px #7a7e75;
 }
 
 .table h1{
-    padding-top: 1em;
+    padding-top: .90em;
     padding-bottom: .30em;
     text-align: center;
     font-weight: 700;
     font-size: 2rem;
     font-family: 'Kaushan Script', cursive;
-    color: #a74628;
+    color: rgb(255, 136, 0);
 }
 
 .table1{
@@ -524,6 +543,7 @@ nav a:focus{
 
 .table-form{
     padding: 1.5em;
+    max-height: 85vh;
 }
 
 .table-form label{
@@ -532,11 +552,12 @@ nav a:focus{
     font-weight: 500;
     font-size: 1.2rem;
     font-family: 'Noto Serif', serif;
+    color: #707070;
 }
 
 .table-form .btn{
-    background: #a74628;
-    border-color: #a74628;
+    background: #ff5600;
+    border-color: #ff5600;
     margin-top: 1.5em;
     font-weight: 700!important;
     font-size: .75rem!important;
@@ -561,10 +582,11 @@ nav a:focus{
     border: 2px solid #ff7a5c;
 }
 
-@media only screen and (min-width:700px){
+@media only screen and (min-width:770px){
     .table h1{
-        padding-top: 4em;
-        padding-bottom: 2em;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        color: black;
     }
     .table1{
         background: white;
@@ -572,15 +594,251 @@ nav a:focus{
         margin-left: -1.3em;
         margin-right: -1.3em;  
     }
-    .g{
-        width: 60%;
-        padding-left: 1em;
-        display: table-cell;
+    .form-group{
+        width: 50%;
+        float: left;
+        padding: 10px;
+    }
+    .table-form .btn{
+        font-size: 1rem!important;
+    }
+    .centerbtn{
+        text-align: center;
     }
 }
 
-@media only screen and (min-width:1000px){
-    .table h1{
-        color: green;
+/* *** OTHER SERVICES *** */
+.other-services{
+    text-align: center;
+}
+
+.other-services-images{
+    width: 30%;
+    max-height: 32%;
+    padding-bottom: 1em;
+    margin-top: 2em;
+}
+
+.other-services h1{
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    color: #a74628;
+}
+
+.other-services h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+.other-services p{
+    font-family: 'Oxygen', sans-serif;
+    color: #707070;
+    padding: .75em;
+    padding-top: 0;
+}
+
+.other-services-bg{
+    background: white;
+    margin-bottom: .75em;
+    
+}
+
+.other-services-bg:hover,
+.other-services-bg:focus{
+    box-shadow: 1px 0px 8px #cecfcc;
+}
+
+.other{
+    flex-direction: column;
+}
+
+@media only screen and (min-width:770px){
+    .other{
+        flex-direction: row;
+    }
+    .other-services-bg{
+        margin: .35em;
+    }
+}
+
+
+/* *** RECENT BLOG POST *** */
+.blog-area h1{
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Kaushan Script', cursive;;
+    color: #a74628;
+
+}
+
+.blog-area .single-blog .blog-text{
+    padding: 20px 10px 10px 21px;
+    background: #f7f9f8;
+    position: relative;
+    bottom: 63px;
+    float: right;
+    width: 94%;
+    border-radius: 10px;
+}
+
+.blog-text .date{
+    color: #828fa3;
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    margin-bottom: .25rem!important;
+}
+
+.blog-text .subtext{
+    font-weight: 700;
+    color: #212025;
+    font-family: 'Playfair Display', serif;
+    /* font-style: normal; */
+}
+
+.blog-area .single-blog .blog-text:hover,
+.blog-area .single-blog .blog-text:focus{
+    background: #ff5600;
+}
+
+.blog-area .single-blog .blog-text:hover .date,
+.blog-area .single-blog .blog-text:focus .date{
+    color: white;
+}
+
+.blog-area .single-blog .blog-text:hover .subtext,
+.blog-area .single-blog .blog-text:focus .subtext{
+    color: white;
+}
+
+.blog{
+    flex-direction: column;
+}
+
+.blog-image{
+    margin-top: 0;
+}
+
+.single-blog{
+    margin-bottom: 4em;
+}
+
+@media only screen and (min-width:770px){
+    .blog{
+        flex-direction: row;
+    }
+    .blog-image{
+        max-height: 80vh;
+    }
+    .blog-text .date{
+        font-size: 1rem;
+    }
+    
+    .blog-text .subtext{
+        font-size: 1rem;
+    }
+    .single-blog{
+        margin: .55em;
+        margin-bottom: 6em;
+    }
+}
+
+
+/* *** FOOTER *** */
+.footer{
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    margin-top: 1.5em;
+}
+
+.footer h3{
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+    padding-bottom: .45em;
+}
+
+.footer p{
+    font-size: .90rem;
+    color: #7a7e75;
+}
+
+.footer .footer-sub{
+    padding-top: .50em;
+    padding-bottom: .50em;
+}
+
+.footer .footer-sub button{
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #ff5600;
+    padding: .25em;
+    color: #ff5600;
+    text-transform: uppercase;
+    font-size: .85rem;
+    margin-bottom: .50em;
+}
+
+.footer .footer-sub button:hover,
+.footer .footer-sub button:focus{
+    background: #ff5600;
+    color: white;
+}
+
+.footer .footer-sub .footer-sub-sub{
+    padding-top: .35em;
+    padding-bottom: .35em;
+}
+
+.footer .footer-sub ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-sub ul li{
+    display: inline;
+    padding: .50em;
+    font-size: 1.2rem;
+}
+
+.footer .footer-sub ul li:hover,
+.footer .footer-sub ul li:focus{
+    color: #ff5600;
+}
+
+@media only screen and (min-width:770px){
+    .footer{
+        flex-direction: row;
+        margin-top: 7em;
+        margin-bottom: 7em;
+    }
+    .sub-1{
+        width: 35%;
+    }
+    .sub-2{
+        width: 35%;
+    }
+    .sub-3{
+        width: 20%;
+    }
+    .footer h3{
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-family: 'Noto Serif', serif;
+        padding-bottom: .45em;
+    }
+    
+    .footer p{
+        font-size: 1rem;
+        color: #7a7e75;
+    }
+    .footer .footer-sub ul li{
+        font-size: 1.5rem;
     }
 }

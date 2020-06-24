@@ -6,7 +6,7 @@
             <img src="../static/image/kelsey-chance-ZrhtQyGFG6s-unsplash.jpg" class="d-block w-100 carousel-image"
                 alt="...">
             <div class="carousel-caption d-md-block">
-                <h1>TO LIVE A FULL LIFE, <br> YOU HAVE TO FILL YOUR <br> STOMACH FIRST.</h1>
+                <h1>TO LIVE A FULL LIFE, YOU HAVE TO FILL YOUR STOMACH FIRST.</h1>
                 <p>Check out our menu to get the best meal, feel your stomach with good meals you've always dreamed of.
                 </p>
                 <button type="button" class="btn btn-outline-success"><a href="#">Check Menu</a></button>
@@ -101,11 +101,11 @@
             <div class="menu-tab-content">
                 <div class="tab-content menu-tab-1 flex">
                     <div class="menu-item flex">
-                        <div class="image1"><img src="../static/image/nigerian-fried-rice1.jpg" class="menu-image"
-                                alt=""></div>
+                        <div><img src="../static/image/97eb2eac5f40bb9a1800dc18ee1125df.jpg" class="menu-image" alt="">
+                        </div>
                         <div class="menu-text">
-                            <h3>Fried Rice</h3>
-                            <p>Nigerian Fried Rice and Chicken.</p>
+                            <h3>Yam porridge</h3>
+                            <p>Yam porridge with stew and the splah.</p>
                         </div>
                         <div class="menu-price">N600</div>
                     </div>
@@ -194,11 +194,11 @@
 
         <div class="table1">
             <form class="table-form">
-                <div class="form-group g">
+                <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
-                <div class="form-group g">
+                <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
@@ -218,7 +218,9 @@
                     <label for="exampleInputPassword1">Time</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-primary">Book Now</button>
+                <div class="centerbtn">
+                    <button type="submit" class="btn btn-primary">Book Now</button>
+                </div>
             </form>
         </div>
 
@@ -226,28 +228,52 @@
 </section>
 
 <section class="container mt-5">
-    <div id="container">
-
-        <div id="monster">Hello</div>
-        <div class="hideme">Fade In</div>
-        <div class="hideme">Fade In</div>
-
-    </div>
+   <div class="other-services">
+       <h1>Other Services</h1>
+       <div class=" other flex">
+           <div class="other-services-bg">
+               <img src="../static/image/worker.png" class="other-services-images" alt="worker">
+               <h3>Best Employees</h3>
+               <p>We've got the best employees, with great personalities, always willing to put the satisfacion of customers as their priority.</p>
+           </div>
+           <div class="other-services-bg">
+               <img src="../static/image/dish.png" class="other-services-images" alt="cultery">
+               <h3>Quality Food</h3>
+               <p>We make sure that the best ingredients are used in preparing our food, and we do our best to provide customers with quality food.</p>
+           </div>
+           <div class="other-services-bg">
+               <img src="../static/image/chef.png" class="other-services-images" alt="chef">
+               <h3>Perfect Cook</h3>
+               <p>To get provide quality and tasty good for our customers, we have in our possession the best chefs of all times.</p>
+            </div>
+       </div>
+   </div>
 </section>
 
-<section class="container">
-    <div class="card text-center">
-        <div class="card-header">
-            Featured
+<section class="container blog-area">
+        <h1>Recent Blog Post</h1>
+        <div class="blog flex">
+            <div class="single-blog">
+                <img src="../static/image/blog1.png" class="blog-image" alt="">
+                <div class="blog-text">
+                    <p class="date">24 June, 2020</p>
+                    <p class="subtext">Addiction when food plate becomes</p>
+                </div>
+            </div>
+            <div class="single-blog">
+                <img src="../static/image/blog2.png" class="blog-image" alt="">
+                <div class="blog-text">
+                    <p class="date">24 June, 2020</p>
+                    <p class="subtext">Addiction when food plate becomes</p>
+                </div>
+            </div>
+            <div class="single-blog">
+                <img src="../static/image/blog3.png" class="blog-image" alt="">
+                <div class="blog-text">
+                    <p class="date">24 June, 2020</p>
+                    <p class="subtext">Addiction when food plate becomes</p>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <div class="card-footer text-muted">
-            2 days ago
-        </div>
-    </div>
 </section>
 {% endblock content %}
