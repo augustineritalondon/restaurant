@@ -752,8 +752,8 @@ nav a:focus{
     flex-direction: column;
     text-align: left;
     color: white;
-    margin-top: 3em;
-    margin-bottom: 5em;
+    margin-top: 2.5em;
+    margin-bottom: 3.5em;
 }
 
 .footer h3{
