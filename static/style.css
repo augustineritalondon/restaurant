@@ -168,6 +168,7 @@ footer{
     background-color: transparent!important;
     border-color: whitesmoke!important;
     border-radius: 30px!important;
+    text-decoration: none!important;
 }
 
 .btn-outline-success:hover,
