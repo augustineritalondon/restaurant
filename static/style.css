@@ -763,11 +763,6 @@ nav a:focus{
     padding-bottom: .45em;
 }
 
-.footer p{
-    font-size: .90rem;
-    color: #7a7e75;
-}
-
 .footer .footer-sub{
     padding-top: .50em;
     padding-bottom: .50em;
@@ -809,6 +804,13 @@ nav a:focus{
 .footer .footer-sub ul li:hover,
 .footer .footer-sub ul li:focus{
     color: #ff5600;
+}
+
+.footer .rita{
+    font-size: .75em;
+    padding: 0;
+    margin: 0;
+    color: white;
 }
 
 @media only screen and (min-width:770px){
