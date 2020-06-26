@@ -674,7 +674,7 @@ nav a:focus{
     text-align: center;
     font-weight: 700;
     font-size: 2rem;
-    font-family: 'Kaushan Script', cursive;;
+    font-family: 'Kaushan Script', cursive;
     color: #a74628;
 
 }
@@ -814,6 +814,9 @@ nav a:focus{
 }
 
 @media only screen and (min-width:770px){
+    footer{
+        height: 100vh;
+    }
     .footer{
         flex-direction: row;
         margin-top: 10.5em;
@@ -848,8 +851,8 @@ nav a:focus{
 /* *** MENU TEMPLATE *** */
 
 .menu-title-text{
-    font-size: 2.5rem!important;
-    margin-top: 10%;
+    font-size: 2rem!important;
+    margin-top: 7%;
     text-align: center;
     padding: 0;
     margin-bottom: 0;
@@ -865,5 +868,253 @@ nav a:focus{
 @media only screen and (min-width:770px){
     .menu-title-text{
         font-size: 6rem!important;
+    }
+}
+
+
+/* *** ABOUT TEMPLATE *** */
+
+.about-image{
+    height: 80vh;
+    margin-top: 1em;
+    border-radius: 20px;
+}
+
+.restaurant{
+    flex-direction: column;
+}
+
+.restaurant-1{
+    flex-direction: column;
+}
+
+.res{
+    flex-direction: column;
+}
+
+.restaurant h1{
+    font-size: 1.8rem;
+    margin-top: .50em;
+    margin-bottom: .45em;
+    font-family: 'Playfair Display', serif;
+}
+
+.restaurant p{
+    font-size: 1.2em;
+    color: #7a7e75;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.restaurant button{
+    text-decoration: none;
+    margin-top: 2.5em;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #17a2b8;
+    padding: .25em;
+    color: #17a2b8!important;
+    text-transform: uppercase;
+    font-size: .85rem;
+    margin-bottom: .50em;   
+}
+
+.restaurant-1 h1{
+    font-size: 1.8rem;
+    margin-top: 1.3em;
+    margin-bottom: .45em;
+    font-family: 'Playfair Display', serif;
+}
+
+.restaurant-1 p{
+    font-size: 1.2em;
+    color: #7a7e75;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.resta{
+    text-align: center;
+}
+
+.resta h1{
+    font-size: 1.8rem;
+    margin-top: 2em;
+    margin-bottom: .45em;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.resta p{
+    font-size: 1.2em;
+    color: #7a7e75;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.resta-page{
+    margin-top: 2em;
+}
+
+.resta-page ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3em;
+}
+
+.resta-page ul li{
+    display: inline;
+    padding: .50em;
+    font-size: 1.2rem;
+}
+
+.resta-page ul li:hover,
+.resta-page ul li:focus{
+    color: #ff5600;
+}
+
+.resta-page-image{
+    width: 35%;
+    height: 18%;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width:770px){
+    .restaurant{
+        flex-direction: row;
+        margin-top: 2em;
+    }
+    
+    .restaurant-1{
+        flex-direction: row;
+    }
+    
+    .res{
+        flex-direction: row;
+    }
+    .img-1{
+        width: 40%;
+    }
+    .txt{
+        width: 55%;
+        margin-top: 6em;
+    }
+    .resta{
+        margin-top: 8em;
+    }
+    .resta h1{
+        font-size: 2.5em;
+        font-family: 'Kaushan Script', cursive;
+        color: #a74628;
+    }
+    .resta-page-image{
+        width: 25%;
+        height: 23%;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+}
+
+/* *** CONTACT TEMPLATE *** */
+.main-contact{
+    flex-direction: column;
+}
+
+.contact h1{
+    margin-top: 2em;
+    font-size: 1.7rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.form-control{
+    height: 43px!important;
+}
+
+.textarea{
+    height: 150px!important;
+    resize: horizontal;
+    overflow: visible;
+}
+
+.contact-form button{
+    margin-top: 1.5em;
+    background: transparent;
+    border: 2px solid #ff5600;
+    padding: .50em;
+    color: #ff5600!important;
+    text-transform: uppercase;
+    font-size: 1rem!important;
+    margin-bottom: .50em;
+}
+
+.contact-form button:hover,
+.contact-form button:focus{
+    color: white!important;
+    background: #ff5600;
+    border: 2px solid #ff5600;
+}
+
+.fahome{
+    width: 15%;
+    font-size: 1rem;
+}
+.faho{
+    width: 75%;
+}
+
+.faho h4{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+.faho p{
+    font-size: .75rem;
+    color: #7a7e75;
+}
+
+.add{
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.form-f{
+    flex-direction: column;
+}
+
+@media only screen and (min-width:770px){
+    .main-contact{
+        flex-direction: row;
+    }
+    .contact{
+        width: 70%;
+    }
+    .add{
+        width: 22%;
+        margin-top: 7em;
+    }
+    .form-f{
+        flex-direction: column;
+    }
+    .textarea{
+        width: 205%!important;
+    }
+    .textarea1{
+        width: 205%!important;
+    }
+    .contact-form button{
+        width: 20%;
+        margin-left: .45em;
+        margin-bottom: 3em;
+    }
+    .contact h1{
+        margin-top: 2em;
+        font-size: 1.7rem;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        margin-left: .45em;
     }
 }
