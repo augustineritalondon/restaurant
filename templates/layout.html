@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Playfair+Display&family=Source+Code+Pro:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 
@@ -37,7 +38,7 @@
                         <a class="nav-link" href="{{ url_for('menu') }}">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('about') }}">About</a>
@@ -61,7 +62,7 @@
             <div class="footer-sub sub-1">
                 <h3>About Restaurant</h3>
                 <p>Lorem ipsum dolor sit amet sequireiciendis odit nesciunt harum quae ab ratione ducimus molestiae? Facilis earum beatae temporibus molestias ut.</p>
-                <button>Read more</button>
+                <button type="button"> Read more</button>
             </div>
             <div class="footer-sub sub-2">
                 <div class="footer-sub-sub">

@@ -1,0 +1,118 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active img-gradient">
+            <img src="../static/image/jess-bailey-q10VITrVYUM-unsplash.jpg" class="d-block w-100 carousel-image"
+                alt="...">
+            <div class="carousel-caption d-md-block">
+                <h1 class="menu-title-text " style="font: size 3rem;">Blog Posts</h1>
+                <p><i class="fa fa-arrow-down menu-icon" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="container">
+    <div class="blog-content flex">
+        <div class="pag">
+            <div class="blog-bg">
+                <img src="../static/image/stephanie-hau-rLA5PFJx_8w-unsplash.jpg" class="main-blog-image" alt="">
+                <h4><a href="{{ url_for('blog_detail') }}">Google inks pact for new 35-storey office</a></h4>
+                <p class="blog-date">15 Jan</p>
+                <p class="blog-p">That dominion stars lights dominion divide years for fourth have don't stars is that
+                    he earth it first without heaven in place seed it second morning saying.</p>
+                <a href="#" class="fa fa-comments blog-link" style="color: #7a7e75!important;"> 3 comments</a>
+            </div>
+            <div class="blog-bg">
+                <img src="../static/image/stephanie-hau-rLA5PFJx_8w-unsplash.jpg" class="main-blog-image" alt="">
+                <h4><a href="{{ url_for('blog_detail') }}">Google inks pact for new 35-storey office</a></h4>
+                <p class="blog-date">15 Jan</p>
+                <p class="blog-p">That dominion stars lights dominion divide years for fourth have don't stars is that
+                    he earth it first without heaven in place seed it second morning saying.</p>
+                <a href="#" class="fa fa-comments blog-link" style="color: #7a7e75!important;"> 3 comments</a>
+            </div>
+            <div class="blog-bg">
+                <img src="../static/image/stephanie-hau-rLA5PFJx_8w-unsplash.jpg" class="main-blog-image" alt="">
+                <h4><a href="{{ url_for('blog_detail') }}">Google inks pact for new 35-storey office</a></h4>
+                <p class="blog-date">15 Jan</p>
+                <p class="blog-p">That dominion stars lights dominion divide years for fourth have don't stars is that
+                    he earth it first without heaven in place seed it second morning saying.</p>
+                <a href="#" class="fa fa-comments blog-link" style="color: #7a7e75!important;"> 3 comments</a>
+            </div>
+            <div class="blog-bg">
+                <img src="../static/image/stephanie-hau-rLA5PFJx_8w-unsplash.jpg" class="main-blog-image" alt="">
+                <h4><a href="{{ url_for('blog_detail') }}">Google inks pact for new 35-storey office</a></h4>
+                <p class="blog-date">15 Jan</p>
+                <p class="blog-p">That dominion stars lights dominion divide years for fourth have don't stars is that
+                    he earth it first without heaven in place seed it second morning saying.</p>
+                <a href="#" class="fa fa-comments blog-link" style="color: #7a7e75!important;"> 3 comments</a>
+            </div>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <aside>
+            <div class="sidebar-widget">
+                <h2 class="widget-title">Most Popular Posts</h2>
+                <div class="widget-recent-post flex">
+                    <div class="w-img">
+                        <img src="../static/image/turmeric-rice.jpg" alt="being the forth child" class="widget-image">
+                    </div>
+                    <div class="w-t">
+                        <h3 class="widget-recent-post-title"><a href="#"> Best food with great taste </a></h3>
+                        <p>12 December, 2020</p>
+                    </div>
+                </div>
+                <div class="widget-recent-post flex">
+                    <div class="w-img">
+                        <img src="../static/image/97eb2eac5f40bb9a1800dc18ee1125df.jpg" alt="being the forth child" class="widget-image">
+                    </div>
+                    <div class="w-t">
+                        <h3 class="widget-recent-post-title"><a href="#"> Best food with great taste </a></h3>
+                        <p>12 December, 2020</p>
+                    </div>
+                </div>
+                <div class="widget-recent-post flex">
+                    <div class="w-img">
+                        <img src="../static/image/IMG_20160905_082224.jpg" alt="being the forth child" class="widget-image">
+                    </div>
+                    <div class="w-t">
+                        <h3 class="widget-recent-post-title"><a href="#"> Best food with great taste </a></h3>
+                        <p>12 December, 2020</p>
+                    </div>
+                </div>
+                <div class="widget-recent-post flex">
+                    <div class="w-img">
+                        <img src="../static/image/ogbono-soup.png" alt="being the forth child" class="widget-image">
+                    </div>
+                    <div class="w-t">
+                        <h3 class="widget-recent-post-title"><a href="#"> Best food with great taste </a></h3>
+                        <p>12 December, 2020</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+    </div>
+</section>
+
+{% endblock content %}
